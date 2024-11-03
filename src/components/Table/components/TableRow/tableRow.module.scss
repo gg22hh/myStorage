@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  &__info {
+    & h2 {
+      margin-bottom: 5px;
+    }
+    & p {
+      color: #73787D;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .row {
+    & img {
+      width: 28px;
+      height: 28px;
+    }
+    &__info p {
+      font-size: 10px;
+    }
+  }
+}
